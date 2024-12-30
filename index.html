@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bliss</title>
+  <style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+     
+/* Navigation Bar */
+nav {
+    position: absolute; /* Positions the nav bar relative to the header */
+    top: 0; /* Aligns it to the top of the header */
+    left: 0;
+    width: 100%; /* Stretches the nav bar across the full width */
+    background: #493628; /* Semi-transparent white background */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensures it appears above the background image */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li img {
+    height: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+nav ul a:hover {
+    background-color: rgba(201, 176, 55, 0.5); /* Highlight on hover */
+    border-radius: 5px;
+}
+
+
+    .landing-page
+     {
+    position: relative;
+    background-image: url('WappLogo.png'); /* Replace with your image path */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width:100%; /* Full-screen height */
+    padding:0%;
+    margin:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFD700;
+    font-family: 'Dancing Script', cursive; /*Add Google Font if not included */ 
+    overflow:hidden;
+}
+
+h2 {
+    color:white;
+}
+.landing-page h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds depth to the text */
+}
+
+.arrow-right {
+    position: absolute;
+    bottom: 20px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 10px 15px;
+    border-radius: 50%; /* Circle button */
+    transition: transform 0.3s;
+}
+
+.arrow-right:hover {
+    transform: scale(1.2); /* Slightly enlarges on hover */
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- Add this image as a logo to the top left corner of navigation bar -->
+            <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt="Bakery Logo"></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header class="landing-page">
+        <h1>Welcome to Sweet Bliss Bakery!</h1>
+         <h2> Where every bite tells a story of love, joy, and indulgence.</h2>
+        <a href="CategoryPg.html" class="arrow-right">➤</a> <!-- Right-positioned arrow -->
+    </header>
+   
+
+          
+
+</body>
+</html>
+
