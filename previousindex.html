@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+     <style>
+             /* Rainbow Theme for Bakery Website */
+
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #795757, #664343);
+    color: #333;
+}
+
+
+
+/* Navigation Bar */
+nav {
+    background: #fffod1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li img {
+    height: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Header Section */
+/* Header Section */
+header {
+    position: relative;
+    background-image: url('BakeryLogo.png'); /* Add your image file path here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay-logo {
+    position: relative;
+    z-index: 2;
+}
+
+#para {
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 4rem;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Scroll Down Arrow */
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: goldenrod;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    text-decoration: none;
+}
+
+.scroll-down-arrow:hover {
+    color: #f1c40f;
+}
+
+/* Bounce animation for the arrow */
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
+
+/* Section Heading */
+h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: black;
+    margin: 50px 0 20px;
+    position: relative;
+    padding-top: 60px; /* Prevent overlap when scrolled into view */
+}
+
+/* Rest of the CSS remains unchanged */
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Categories Section */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+section a {
+    width: 250px; /* Increased size */
+    height: 300px; /* Adjusted height */
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 5px solid #B8860B; /* Muted Gold border */
+    padding: 10px; /* Increased padding */
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+section a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+section a img {
+    width: 220px; /* Increased image size */
+    height: 220px;
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 10px;
+}
+
+
+
+section a span {
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    /* color: white; */
+    color: #444444; 
+    background: none;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+/* Footer Section */
+footer {
+    background: #3b3030;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+footer h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+footer img:hover {
+    transform: scale(1.1);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+     </style>
+<body>
+    <nav>
+        <ul>
+            <!-- Add this image as a logo to the top left corner of navigation bar -->
+            <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt="Bakery Logo"></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!-- Apply this image as a background for the header -->
+        <div class="overlay-logo">
+            <p id="para">Dive into the bliss</p>
+            <!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt="Overlay Logo"> -->
+        </div>
+        <a href="#categories" class="scroll-down-arrow">&#8595;</a>
+    </header>
+    <h2 id="categories">Choose Your Indulgence</h2>
+    <!-- <h2>Choose Your Indulgence</h2> -->
+    <section>
+        <!-- Cake text should be shown over this picture -->
+        <a href="Cakes.html">
+            <img src="CkeLog7.jpg" alt="Cakes">
+            <span>Cakes</span>
+        </a>
+        <!-- Cupcake text should be shown over this picture -->
+        <a href="CupCakes.html">
+            <img src="CCFrontLogo.jpg" alt="Cupcakes">
+            <span>Cupcakes</span>
+        </a>
+        <!-- Cookies text should be shown over this picture -->
+        <a href="Cookies.html">
+            <img src="CookisLogo2.jpg" alt="Cookies">
+            <span>Cookies</span>
+        </a>
+    </section>
+    <footer>
+        <h3>Follow us on </h3>
+            <img src="instaPNG.jpeg" alt="Social Media Icon">
+            <img src="fbPNG.jpeg" alt="Social Media Icon">
+            <img src="ytPNG.webp" alt="Social Media Icon">
+    </footer>
+</body>
+</html>
+
