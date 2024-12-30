@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Vanilla CupCake Recipe</title>
+    <style>
+             body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #795757, #664343);
+    color: #373737; /* Grayish black text */
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #664343; /* Soft gold background */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color:white; /* Grayish black */
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul a:hover {
+    background-color: rgba(201, 176, 55, 0.5); /* Highlight on hover */
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:#fff0d1;/* Subtle background for header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white; /* Grayish black */
+    text-align: center;
+    font-family: cursive;
+    border: 2px solid #3B3030; /* Soft gold border */
+    border-radius: 10px;
+    background-color: #664343;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 30%;
+    padding:20px ;
+    margin-left: 400px ;
+}
+
+#heading2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center; /* Center-align the text within its container */
+    font-family: cursive;
+    border: 2px solid #3B3030; /* Soft gold border */
+    border-radius: 10px;
+    background-color: #664343;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%; /* Ensure it fits well within the card */
+    width: auto;
+    padding: 20px;
+    margin: 0 auto 20px; /* Center the element horizontally with auto margin */
+}
+
+
+/* Main Recipe Section */
+main {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin:0;
+}
+
+
+
+main ul {
+    list-style: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Card background */
+    border: 2px solid #664343; /* Soft gold border */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+main ul li {
+    margin: 10px 0;
+    text-align:left;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: #373737; /* Grayish black */
+}
+
+main ul li::before {
+    content: "🧁"; /* Cake emoji as bullet point */
+    margin-right: 10px;
+    color: #c9b037; /* Soft gold */
+    font-size: 1.2rem;
+}
+.cake-image {
+    flex: 1;
+    max-width: 450px;
+    text-align: center;
+    margin-left :100px ;
+
+}
+
+.cake-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #664343; /* Soft gold border */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+
+}
+
+   
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(201, 176, 55, 0.8); /* Soft gold background */
+    color: white; /* Grayish black */
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3B3030;
+    color: #373737;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+<!--new-->
+footer h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer iframe {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 560px; /* Restrict video size */
+    height: 315px;
+}
+footer {
+    background: #3B3030;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+footer h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.heading{
+    border: 2px solid #fff0d1; /* Soft gold border */
+    border-radius: 10px;
+    background-color: #fff0d1;
+    color:black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 30%;
+    padding:20px ;
+    margin-left: 400px;
+
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+footer img:hover {
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <!-- Add this image as a logo to the top left corner of navigation bar -->
+                <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt=""></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <header>
+            <!-- set this image horizontalyy in a way that it covers whole horizontal place and vertically 2/4th of page -->
+             <div>
+            <!-- <img src="Vanilla with FrostingCC.png.jpg" alt=""></div> -->
+            <h1>Vanilla CupCake Recipe</h1></div>
+        
+           <main>
+            <div class="heading1">
+               <ul>
+                  <h2 id="heading2">For the CupCakes</h2>
+    
+                  <li> 1 ½ cups (190g) all-purpose flour  </li>
+                  <li>1 ½ teaspoons baking powder </li>
+                  <li>  ¼ teaspoon salt </li>
+                  <li> 1 ½ teaspoons baking powder</li>
+                  <li>½ cup (115g) unsalted butter, softened</li>
+                  <li>1 cup (200g) granulated sugar </li>
+                  <li> 2 large eggs, room temperature</li>
+                  <li>½ cup (120ml) whole milk, room temperature</li>
+                  <li> 1 cup (240ml) milk</li>>
+                  <li>2  teaspoons vanilla extract</li>
+                 
+
+                
+
+                  <h2 id="heading2">For The Cream Cheese Frosting</h2>
+                  <li> 1 cup (230g) unsalted butter, softened </li>
+                  <li>4 cups (500g) powdered sugar, sifted</li>
+                  <li>2–3 tablespoons heavy cream or milk </li>
+                  <li>2 teaspoon vanilla extract</li>
+                  <li>Food coloring (your choice of colors)</li>
+                  <li>Sprinkles (optional)</li>
+
+               </ul>
+               </div>
+
+               <div class="cake-image">
+                <img src="Vanilla with FrostingCC.png.jpg" alt="Rainbow Cake">
+            </div>
+           </main>
+    
+    
+       <footer>
+        <h3 id="heading">Watch Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_NAkpfAYm90?si=VuwCfQJTICq6j1Mi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <h3>Follow us on </h3>
+         <img src="instaPNG.jpeg" alt="Social Media Icon">
+         <img src="fbPNG.jpeg" alt="Social Media Icon">
+         <img src="ytPNG.webp" alt="Social Media Icon">  
+       
+       </footer>
+    </body>
+    </html>

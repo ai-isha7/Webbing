@@ -1,0 +1,106 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d7da; /* Blush Pink */
+    color: #000000; /* Black */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #000000; /* Black */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a57c00; /* Gold Highlights */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8d7da; /* Blush Pink */
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    text-align: center;
+    background: url('https://static.vecteezy.com/system/resources/previews/026/585/716/non_2x/a-taste-of-sweetness-a-pop-mart-blindbox-cake-shop-with-a-clean-background-ai-generative-free-photo.jpg') no-repeat center/cover;
+    height: 300px;
+}
+
+header img:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #a57c00; /* Gold Highlights */
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main h2 {
+    color: #a57c00; /* Gold Highlights */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section a {
+    text-decoration: none;
+    color: #000000; /* Black */
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+section img {
+    border: 3px solid #a57c00; /* Gold Highlights */
+    border-radius: 10px;
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #a57c00; /* Gold Highlights */
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Black */
+    color: #f8d7da; /* Blush Pink */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
