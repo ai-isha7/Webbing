@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+      /* Continued from above */
+      body
+{   font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     background: #493628;/* linear-gradient(45deg, #795757, #664343); */
+    /* Grayish Black for text */
+}
+
+/* Navigation Bar */
+nav {
+    background: #493628; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li img {
+    height: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    background-color: rgba(201, 176, 55, 0.5); /* Highlight on hover */
+    border-radius: 10px;
+    border:2px;
+}
+
+header {
+  position: relative;
+  background-image: url('FFFLOGO8.png'); /* Set logo as background */
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the background image */
+  height: 50vh; /* Make the header cover 50% of the viewport */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Center the text horizontally */
+  text-align: center;
+}
+
+.overlay-logo {
+  position: absolute;
+  z-index: 2;
+}
+
+#para {
+  margin: 0;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4rem; /* You can adjust this to make the text size larger or smaller */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  max-width: 80%; /* Limit the width so the text doesn't overflow */
+  line-height: 1.4;
+  text-align:initial;
+  margin-bottom: 50px ;
+  margin-left: 100px;
+  margin-right: 80px;
+}
+
+/* Headings */
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff0d1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #795757; /* Elegant underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    border-left: 5px solid #493628; /* Stylish border on the left */
+    padding-left: 10px;
+}
+
+/* Paragraphs */
+main p {
+    font-size: 1.2rem;
+    color:goldenrod;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) 
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main div {
+        margin-bottom: 20px;
+    }
+    footer {
+    background: #3B3030; 
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+footer h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 10px;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+footer img:hover {
+    transform: scale(1.1);
+}
+   </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <!-- Add this image as a logo to the top left corner of navigation bar -->
+        <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt=""></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="ContactUs.html">Contact</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+    </ul>
+</nav>
+
+    <header>
+         <!-- set this image as bg-->
+            <div class="overlay-logo">
+                <p id="para">About Us</p>
+              
+            </div>
+    </header>
+            <div class="background image"></div>
+    <main>
+        <div>
+           <h1>About Us</h1>
+           <h2> Our Story </h2>
+           <p>At Our Bakery, we believe every cake should be a masterpiece. Founded with a passion for baking, we specialize in crafting delicious, visually stunning cakes for all occasions. Our journey began with a simple passion for baking and a dream to make life’s sweetest moments even more memorable. From humble beginnings in a cozy kitchen to becoming a trusted name in custom cakes, we’ve stayed true to our mission: crafting cakes that are as beautiful as they are delicious. Every creation reflects our love for detail, quality ingredients, and a commitment to spreading joy—one slice at a time.</p>
+        </div>
+
+        <div>
+           <h2>Quality Ingredients</h2>
+        <p>We use only the finest ingredients, locally sourced whenever possible, to create cakes that are not only beautiful but also full of flavor. At The Cake Palette, quality is at the heart of everything we create. We handpick the finest, freshest ingredients to ensure every cake is as delicious as it is beautiful. From locally sourced dairy to premium chocolates and natural flavors, we never compromise on what goes into our creations. Because a truly exceptional cake starts with exceptional ingredients.</p>
+        </div>
+
+
+        <div>
+           <h2>Our Promise</h2>
+           <p>Whether it's a birthday, wedding, or a simple treat, we’re dedicated to making every moment sweeter with a cake made just for you. At Our Bakery, we are committed to making your celebrations extraordinary. Our promise is to deliver cakes that are not just desserts but unforgettable experiences. From the finest ingredients to impeccable designs, every cake is crafted with care and precision. We aim to bring your vision to life, ensuring every bite is as delightful as the occasion it celebrates.</p>
+        </div>
+
+
+</main>
+</body>
+<footer>
+      <h3>Follow us on </h3>
+      <img src="instaPNG.jpeg" alt="Social Media Icon">
+      <img src="fbPNG.jpeg" alt="Social Media Icon">
+      <img src="ytPNG.webp" alt="Social Media Icon">
+
+</footer>
+
+</body>
+</html>
