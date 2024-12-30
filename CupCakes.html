@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupCakes</title>
+    <style>
+               body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     background: #493628;/* linear-gradient(45deg, #795757, #664343); */
+    color:  #333; /* Grayish Black for text */
+}
+
+/* Navigation Bar */
+nav {
+    background: #493628; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li img {
+    height: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    background-color: rgba(201, 176, 55, 0.5); /* Highlight on hover */
+    border-radius: 10px;
+    border:2px;
+}
+
+header {
+  position: relative;
+  background-image: url('CClogo7.ong.jpg'); /* Set logo as background */
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the background image */
+  height: 50vh; /* Make the header cover 50% of the viewport */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Center the text horizontally */
+  text-align: center;
+}
+
+.overlay-logo {
+  position: absolute;
+  z-index: 2;
+}
+
+#para {
+  margin: 0;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem; /* You can adjust this to make the text size larger or smaller */
+  color:white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  max-width: 80%; /* Limit the width so the text doesn't overflow */
+  line-height: 1.4;
+  text-align:initial;
+  margin-bottom: 100px ;
+  margin-left: 100px;
+}
+
+
+.CupCake-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 20px;
+    padding: 20px;
+}
+
+.cupCake-item {
+   background: linear-gradient(145deg, #ffffff, #f8f4ef);
+    border: 2px solid #c96;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cupCake-item img {
+    width: 300px; /* Increased image size */
+    height: 300px;
+     gap:30px;
+    object-fit: cover; /* Crops the image while maintaining aspect ratio */
+    border-radius: 8px;
+}
+
+.cupCake-item span {
+    font-size: 1.5rem;
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #373737;
+    margin: 15px 0;
+    font-family: 'Cursive', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.cupCake-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+ 
+footer {
+    background: #3B3030; 
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+footer h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 10px;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+footer img:hover {
+    transform: scale(1.1);
+}
+
+
+    </style>
+   
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- Add this image as a logo to the top left corner of navigation bar -->
+            <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt=""></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+     <header>
+        
+        <div class="overlay-logo">
+            <p id="para">Where every cupcake is a little piece of heaven—baked fresh, just for you!</p>
+        </div>
+
+     </header>
+<main>
+    <section class="CupCake-gallery">
+    <div class="cupCake-item">
+           <a href="RedVelvetCC.html">
+            <img src="RedCCLogo.png" alt="">
+            </a>
+            <span>Red Velvet CupCake</span>
+     </div>
+
+     <div class="cupCake-item">
+        <a href="ChocoCC.html">
+         <img src="ChocoCC.jpg" alt="">
+         </a>
+         <span>Chocolate CupCake</span>
+  </div>
+
+  <div class="cupCake-item">
+    <a href="VanillaCC.html">
+     <img src="Vanilla with FrostingCC.png.jpg" alt="">
+     </a>
+     <span>Special Vanilla</span>
+</div>
+</section>
+
+
+
+</main>
+<footer>
+       <h3>Follow us on </h3>
+       <img src="instaPNG.jpeg" alt="">
+       <img src="fbPNG.jpeg" alt="">
+       <img src="ytPNG.webp" alt="">
+</footer>
+    
+</body>
+</html>

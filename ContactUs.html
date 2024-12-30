@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+       /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #795757, #664343);
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    background-color: #493628; /* Soft gold background */
+    padding: 10px 20px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li img {
+    height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.overlay-logo {
+  position: absolute;
+  z-index: 2;
+}
+
+#para {
+  margin: 0;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4rem; /* You can adjust this to make the text size larger or smaller */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  max-width: 80%; /* Limit the width so the text doesn't overflow */
+  line-height: 1.4;
+  text-align:center;
+  margin-top: 150px ;
+  margin-left: 450px;
+}
+
+/* Background Image */
+.background-image {
+    background-image: url('WAppLogo2.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Covers 2/3 of the viewport height */
+    width: 100%;
+}
+
+/* Info Boxes */
+/* Info Boxes with Amazing Layout */
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px; /* Adjusts spacing between boxes */
+    background-color: #f9f9f9;
+}
+
+.info-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    position: relative;
+}
+
+/* Box Background Colors */
+.info-box:nth-child(1) {
+    background: linear-gradient(145deg, #795757, #664343);
+}
+
+.info-box:nth-child(2) {
+    background: linear-gradient(145deg, #664343, #493628);
+}
+
+.info-box:nth-child(3) {
+    background: linear-gradient(145deg, #493628, #795757);
+}
+
+/* Icon Styling */
+.info-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Heading and Text Styling */
+.info-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-box p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f5e9e9;
+}
+
+/* Hover Effect */
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.info-box:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add subtle glowing effect on hover */
+.info-box:hover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+
+
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff0d1;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px;
+    /* background-color: #664343; Muted Gold */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    /* background-color: #502d2d; Darker shade for hover */
+}
+
+    /* Google Login Button */
+.google-login {
+    background-color: #c53333; /* Google blue color */
+    color: black
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.google-login .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-login:hover {
+    background-color: #df2020b9; /* Darker blue when hovered */
+}
+
+/* Facebook Login Button */
+.facebook-login {
+    background-color: #1774ed; /* Facebook blue color */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.facebook-login .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.facebook-login:hover {
+    background-color: #1558B1; /* Darker blue when hovered */
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #4285F4; /* Google blue for the link */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the form buttons */
+button {
+    background-color:rgb(6, 116, 6); /* Soft brown for submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #493628; /* Darker brown on hover */
+}
+
+
+footer {
+    background: #3B3030; 
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+footer h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 10px;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+footer img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- Add this image as a logo to the top left corner of navigation bar -->
+            <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/170/small_2x/artisan-bakery-shop-logo-on-transparent-background-png.png" alt=""></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="overlay-logo">
+            <p id="para">Contact Us</p>
+          
+        </div>
+
+    </header>
+
+    <div class="background-image">
+        <!-- This will be your background image covering 2/3 of the page -->
+    </div>
+
+    <div class="info-boxes">
+        <div class="info-box">
+            <img src="phone.png" alt="Phone Icon">
+            <h3>Phone Number</h3>
+            <p>03-111992244</p>
+        </div>
+        <div class="info-box">
+            <img src="email.png" alt="Email Icon">
+            <h3>E-mail</h3>
+            <p>@thecakepalette</p>
+        </div>
+        <div class="info-box">
+            <img src="location.png" alt="Location Icon">
+            <h3>Location</h3>
+            <p>Bahria Town,Lahore</p>
+        </div>
+    </div>
+
+    <section class="contact-form">
+        <form action="action.php">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+            
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Enter Comment" rows="3"></textarea>
+            
+            <button type="submit">Submit</button>
+
+             <!-- Social Login Buttons -->
+             <div class="social-login">
+                <button class="google-login">
+                    <img src="google.png" alt="Google Icon" class="social-icon">
+                    Login with Google
+                </button>
+                <button class="facebook-login">
+                    <img src="fbPNG.jpeg" alt="Facebook Icon" class="social-icon">
+                    Login with Facebook
+                </button>
+            </div>
+
+            <!-- Forgot Password -->
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form> 
+    </section>
+</main>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Follow us on</h3>
+        <img src="fbPNG.jpeg" alt="">
+        <img src="instaPNG.jpeg" alt="">
+        <img src="ytPNG.webp" alt="">
+    </footer>
+</body>
+</html>
+    
+        
